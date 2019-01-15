@@ -72,14 +72,6 @@
 <script src="assets/scripts/script_3.js"></script>
 <script>
     $( document ).ready(function() {
-
-        $("nav ul li a").hover(function(){
-            nav_audio.play();
-            },
-            function(){
-            nav_audio.load();
-        });
-
       $(window).scroll(function(){
         if ($(window).scrollTop() >= 300) {
            $('nav').addClass('fixed-header');
