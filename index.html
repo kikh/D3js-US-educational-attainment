@@ -79,7 +79,7 @@
 <script>
     $( document ).ready(function() {
         $("p").mouseover(function(){
-            var data = $(this).text();
+            var data = $(this).val();
             responsiveVoice.speak(data, "UK English Male");
         });
       $(window).scroll(function(){
