@@ -78,7 +78,7 @@
 </script>
 <script>
     $( document ).ready(function() {
-        $("h2").mouseover(function(){
+        $("h2, label, text").mouseover(function(){
             var data = $(this).html();
             responsiveVoice.speak(data, "UK English Male");
         });
