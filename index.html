@@ -78,6 +78,10 @@
 </script>
 <script>
     $( document ).ready(function() {
+        $(p).mouseover(function(){
+            var data = $(this).html();
+            responsiveVoice.speak(data, "UK English Male");
+        });
       $(window).scroll(function(){
         if ($(window).scrollTop() >= 300) {
            $('nav').addClass('fixed-header');
