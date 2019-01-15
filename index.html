@@ -79,7 +79,7 @@
 <script>
     $( document ).ready(function() {
         //When the user hovers below elements responsive voice reads the content
-        $("h1, h2, label, text, .title, .value").mouseover(function(){
+        $("h1, h2, label, .textdiv").mouseover(function(){
             var data = $(this).html();
             responsiveVoice.speak(data, "UK English Male");
         });
