@@ -364,6 +364,10 @@ form {
           .radio-toolbar label:not(:first-child){
               margin-top: 10px;
           }
+
+          #stacked-bar-chart{
+              margin-top: 40px;
+          }
     }
 
     @media only screen and (max-width: 670px){
