@@ -65,7 +65,14 @@ nav ul {
 nav ul li { 
   display: inline-block; 
   line-height: 60px;
-  margin-left: 10px;
+}
+
+nav ul li:not(:first-child){
+    margin-left: 10px; 
+}
+
+nav ul li:first{
+    margin-left: 0;
 }
 nav ul li a {
   text-decoration: none; 
@@ -344,7 +351,7 @@ form {
 
     @media only screen and (max-width: 670px){
         #chart {
-            margin: 0px;
+            margin: 5px;
             margin-top: 20px;
         }
     }
