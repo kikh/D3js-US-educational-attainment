@@ -11,7 +11,7 @@
   <header>
        <nav>
     <ul>
-      <li><a href="#top" >Top</a></li>
+      <li><a href="#top" onmouseover="PlaySound('nav_audio')" >Top</a></li>
       <li><a href="#national">National</a></li>
       <li><a href="#regional">Regional</a></li>
       <li><a href="#state">State-Level</a></li>
@@ -70,6 +70,12 @@
 <script src="assets/scripts/script_1.js"></script>
 <script src="assets/scripts/script_2.js"></script>
 <script src="assets/scripts/script_3.js"></script>
+<script>
+    function PlaySound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.play();
+    }
+</script>
 <script>
     $( document ).ready(function() {
       $(window).scroll(function(){
