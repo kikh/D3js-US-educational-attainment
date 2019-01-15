@@ -187,6 +187,8 @@ polyline{
 }
 
 #pie-chart {
+    width: 100%;
+    max-width: 980px;
     display: block;
     margin: 0 auto;
 }
