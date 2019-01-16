@@ -198,9 +198,7 @@ polyline{
     font-style: italic;
 }
 
-#pie-chart, #pie-chart g {
-    width: 100% !important;
-    max-width: 960px !important;
+#pie-chart {
     display: block;
     margin: 0 auto;
 }
