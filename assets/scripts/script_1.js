@@ -16,8 +16,8 @@ var donut = donutChart()
     });
 
 function donutChart() {
-    var width = "100%",
-        height = "100%",
+    var width,
+        height,
         margin = {top: 10, right: 10, bottom: 10, left: 10},
         colour = d3.scaleOrdinal().range(["#f9dbbd", "#fca17d", "#db995a", "#b3b492", "#f2db84", "#9ad5ca", "#dee5e5"]), // colour scheme
         variable, // value in data that will dictate proportions on chart
@@ -60,7 +60,10 @@ function donutChart() {
                 .attr('width', width + margin.left + margin.right)
                 .attr('height', height + margin.top + margin.bottom)
               .append('g')
-                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
+                .attr('width', "100%")
+                .attr('height', "100%")
+                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
+                .attr('preserveAspectRatio', 'xMinYMin');
             // ===========================================================================================
 
             // ===========================================================================================
