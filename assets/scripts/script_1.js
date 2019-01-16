@@ -60,10 +60,7 @@ function donutChart() {
                 .attr('width', width + margin.left + margin.right)
                 .attr('height', height + margin.top + margin.bottom)
               .append('g')
-                .attr('width', "100%")
-                .attr('height', "100%")
-                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
-                .attr('preserveAspectRatio', 'xMinYMin');
+                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
             // ===========================================================================================
 
             // ===========================================================================================
@@ -245,12 +242,3 @@ function donutChart() {
 
     return chart;
 }
-
-function resize() {
-    var width = parseInt(d3.select("#pie-chart").style("width")) - margin.left - margin.right,
-    height = parseInt(d3.select("#pie-chart").style("height")) - margin.top - margin.bottom;
-
-    xScale.range([0, width]);
-    yScale.rangeRoundBands([height, 0], 0.1);
-
-};
