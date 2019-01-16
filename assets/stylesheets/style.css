@@ -209,6 +209,7 @@ polyline{
 }
 
 #stacked-bar-chart {
+    margin-top: 20px !important;
     display: block;
     margin: 0 auto;
 }
